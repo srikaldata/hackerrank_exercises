@@ -1,4 +1,4 @@
-# fizzbuzz attempt 1
+# fizzbuzz submission 1 - using for loop
 for num in range(1, 101):
     if num % 3 == 0:
         print("Fizz", end="")
