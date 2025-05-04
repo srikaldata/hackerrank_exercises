@@ -63,3 +63,17 @@ def compareTriplets(a, b):
     return [a_points, b_points]
 
 print(compareTriplets(alice, bob))
+
+# submission 4 - sum, zip using generator
+def compareTriplets(a, b):
+    # Write your code here
+    
+    # a points generator
+    a_points_gen = sum( elem_a > elem_b for elem_a, elem_b in zip(a, b) )
+    
+    # b points generator
+    b_points_gen = sum( elem_a < elem_b for elem_a, elem_b in zip(a, b) )
+    
+    return [a_points_gen, b_points_gen]
+
+print(compareTriplets(alice, bob))
