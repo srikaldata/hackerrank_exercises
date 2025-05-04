@@ -27,3 +27,25 @@ alice = [10,10,10,12]
 bob = [9,10,11,10]
 
 print(compareTriplets(alice, bob))
+
+# submission 2 - without the equal condition
+def compareTriplets(a, b):
+    # Write your code here
+    
+    # initializing the points earned 
+    points = [0,0]
+    
+    # loop through each element
+    for i in range(len(a)):
+        
+        # when a element is greater
+        if a[i] > b[i]:
+            points[0] += 1
+            
+        # when b element is greater
+        elif a[i] < b[i]:
+            points[1] += 1
+
+    return points
+
+print(compareTriplets(alice, bob))
