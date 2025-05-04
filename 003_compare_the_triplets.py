@@ -28,6 +28,7 @@ bob = [9,10,11,10]
 
 print(compareTriplets(alice, bob))
 
+
 # submission 2 - without the equal condition
 def compareTriplets(a, b):
     # Write your code here
@@ -50,6 +51,7 @@ def compareTriplets(a, b):
 
 print(compareTriplets(alice, bob))
 
+
 # submission 3 - using zip and list comprehension
 def compareTriplets(a, b):
     # Write your code here
@@ -64,6 +66,7 @@ def compareTriplets(a, b):
 
 print(compareTriplets(alice, bob))
 
+
 # submission 4 - sum, zip using generator
 def compareTriplets(a, b):
     # Write your code here
@@ -75,5 +78,15 @@ def compareTriplets(a, b):
     b_points_gen = sum( elem_a < elem_b for elem_a, elem_b in zip(a, b) )
     
     return [a_points_gen, b_points_gen]
+
+print(compareTriplets(alice, bob))
+
+
+# submission 5 - sum, zip using generator single line
+def compareTriplets(a, b):
+    # Write your code here
+    
+    # single line solution with generators for a points and b points within a list
+    return [ sum(elem_a > elem_b for elem_a, elem_b in zip(a, b)), sum(elem_a < elem_b for elem_a, elem_b in zip(a, b)) ]
 
 print(compareTriplets(alice, bob))
