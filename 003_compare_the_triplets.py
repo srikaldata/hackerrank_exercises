@@ -49,3 +49,17 @@ def compareTriplets(a, b):
     return points
 
 print(compareTriplets(alice, bob))
+
+# submission 3 - using zip and list comprehension
+def compareTriplets(a, b):
+    # Write your code here
+    
+    # a points
+    a_points = sum([ elem_a > elem_b for elem_a, elem_b in zip(a, b) ])
+    
+    # b points
+    b_points = sum([ elem_a < elem_b for elem_a, elem_b in zip(a, b) ])
+    
+    return [a_points, b_points]
+
+print(compareTriplets(alice, bob))
