@@ -36,6 +36,27 @@ if __name__ == '__main__':
     else:
         
         # even and between 2 and 5
+        if n in list(range(2,6)):
+            print('Not Weird')
+        
+        # even and between 6 and 20
+        elif n in list(range(6,21)):
+            print('Weird')
+        
+        # even and greater than 20
+        else:
+            print('Not Weird')
+
+
+# submission 3 - using if else and elif without list fn
+    # odd check
+    if n % 2 == 1:
+        print('Weird')
+    
+    # even check
+    else:
+        
+        # even and between 2 and 5
         if n in range(2,6):
             print('Not Weird')
         
