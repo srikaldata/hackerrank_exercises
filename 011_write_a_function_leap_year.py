@@ -34,3 +34,13 @@ def is_leap(year):
         leap = True
 
     return leap
+
+# submission 3 - using logic operators
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    # check if year is not div by 100 and div by 4 [OR] div by 400
+    leap = (year % 100 !=0 and year % 4 == 0) or (year % 400 == 0)
+
+    return leap
