@@ -17,4 +17,3 @@ if __name__ == '__main__':
            if num1 + num2 + num3 != n 
             ]
     )
-
