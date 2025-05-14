@@ -19,3 +19,17 @@ if __name__ == '__main__':
     i, c = input().split()
     s_new = mutate_string(s, int(i), c)
     print(s_new)
+
+
+# submission 2 - splitting the string and inserting the character 
+def mutate_string(string, position, character):
+
+    # splitting the string at the position and inserting the character
+    return string[:position] + character + string[(position+1):]
+
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
