@@ -15,4 +15,8 @@ if __name__ == '__main__':
         # for inserting an elem at an idx
         if command[0] == 'insert':
             temp_list.insert(int(command[1]), int(command[2]))
+            
+        # printing the list
+        elif command[0] == 'print':
+            print(temp_list)
         
