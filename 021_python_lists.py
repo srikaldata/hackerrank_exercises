@@ -20,3 +20,7 @@ if __name__ == '__main__':
         elif command[0] == 'print':
             print(temp_list)
         
+        # removing the first instance of the specified element
+        elif command[0] == 'remove':
+            temp_list.remove(int(command[1]))
+        
