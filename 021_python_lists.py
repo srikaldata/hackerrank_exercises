@@ -27,4 +27,8 @@ if __name__ == '__main__':
         # appending the given element at the end of the list
         elif command[0] == 'append':
             temp_list.append(int(command[1]))
+            
+        # sort the list
+        elif command[0] == 'sort':
+            temp_list.sort()
         
