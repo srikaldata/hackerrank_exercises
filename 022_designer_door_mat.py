@@ -19,3 +19,17 @@ print('WELCOME'.center(M, '-'))
 for i in range((N//2)-1, -1, -1):
     pattern = '.|.' * ((2*i)+1)
     print(pattern.center(M, '-'))
+
+
+# submission 2 - using only one for loop
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# the row-by-column dimensions
+N, M = map(int, input().split())
+
+for row in range(N):
+    
+    # designing and printing the center portion
+    if row == N//2:
+        print('WELCOME'.center(M, '-'))
+    
