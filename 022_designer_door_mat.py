@@ -32,4 +32,10 @@ for row in range(N):
     # designing and printing the center portion
     if row == N//2:
         print('WELCOME'.center(M, '-'))
+        
+    # designing and printing the top or bottom portions
+    else:
+        # calculating pattern repetitions based on the row
+        pattern_reps = ((2*row)+1) if row < N//2 else (2*(N-row-1)+1)
+        print(('.|.' * pattern_reps).center(M, '-'))
     
