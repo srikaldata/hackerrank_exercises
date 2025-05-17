@@ -6,3 +6,8 @@
 
 # the row by column dimensions
 N, M = map(int, input().split())
+
+# top portion of the mat
+for i in range(N//2):
+    pattern = '.|.'*((2*i)+1)
+    print(pattern.center(M, '-'))
