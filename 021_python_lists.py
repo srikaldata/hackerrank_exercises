@@ -8,4 +8,7 @@ if __name__ == '__main__':
     
     # looping through the number of commands
     for _ in range(N):
-            
+                    
+        # receiving each command from stdin
+        command = input().strip().split()
+        
