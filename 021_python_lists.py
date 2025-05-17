@@ -23,4 +23,8 @@ if __name__ == '__main__':
         # removing the first instance of the specified element
         elif command[0] == 'remove':
             temp_list.remove(int(command[1]))
+            
+        # appending the given element at the end of the list
+        elif command[0] == 'append':
+            temp_list.append(int(command[1]))
         
