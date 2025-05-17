@@ -14,3 +14,8 @@ for i in range(N//2):
     
 # middle portion of the mat
 print('WELCOME'.center(M, '-'))
+
+# bottom portion of the mat
+for i in range((N//2)-1, -1, -1):
+    pattern = '.|.' * ((2*i)+1)
+    print(pattern.center(M, '-'))
