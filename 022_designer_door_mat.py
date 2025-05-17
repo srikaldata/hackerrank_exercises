@@ -11,3 +11,6 @@ N, M = map(int, input().split())
 for i in range(N//2):
     pattern = '.|.'*((2*i)+1)
     print(pattern.center(M, '-'))
+    
+# middle portion of the mat
+print('WELCOME'.center(M, '-'))
