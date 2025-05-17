@@ -35,4 +35,7 @@ if __name__ == '__main__':
         # pop the last element 
         elif command[0] == 'pop':
             temp_list.pop()
-        
+            
+        # reverse the elements in the list
+        elif command[0] == 'reverse':
+            temp_list.reverse()
