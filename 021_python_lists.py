@@ -31,4 +31,8 @@ if __name__ == '__main__':
         # sort the list
         elif command[0] == 'sort':
             temp_list.sort()
+            
+        # pop the last element 
+        elif command[0] == 'pop':
+            temp_list.pop()
         
