@@ -12,3 +12,7 @@ if __name__ == '__main__':
         # receiving each command from stdin
         command = input().strip().split()
         
+        # for inserting an elem at an idx
+        if command[0] == 'insert':
+            temp_list.insert(int(command[1]), int(command[2]))
+        
