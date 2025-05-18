@@ -9,3 +9,9 @@ def count_substring(string, sub_string):
     
     # substring length
     sub_string_len = len(sub_string)
+    
+    # looping through each char in the string
+    for i in range((len(string)-sub_string_len)+1):
+        pass
+
+    return count
