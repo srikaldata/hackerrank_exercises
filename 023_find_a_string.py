@@ -12,6 +12,9 @@ def count_substring(string, sub_string):
     
     # looping through each char in the string
     for i in range((len(string)-sub_string_len)+1):
-        pass
+        
+        # count if the substring is found
+        if string[i:(i+sub_string_len)] == sub_string:
+            count += 1
 
     return count
