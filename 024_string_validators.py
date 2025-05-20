@@ -13,3 +13,6 @@ if __name__ == '__main__':
     # check if the string has any digit chars
     print(any(str.isdigit(char) for char in s))
     
+    # check if the string has any lowercase chars
+    print(any(str.islower(char) for char in s))
+    
