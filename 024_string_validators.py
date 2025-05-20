@@ -16,3 +16,5 @@ if __name__ == '__main__':
     # check if the string has any lowercase chars
     print(any(str.islower(char) for char in s))
     
+    # check if the string has any uppercase chars
+    print(any(str.isupper(char) for char in s))
