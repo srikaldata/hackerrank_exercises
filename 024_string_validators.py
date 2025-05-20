@@ -25,7 +25,7 @@ if __name__ == '__main__':
     s = input()
     
     # list of functions to be applied on the string
-    fn_list = [str.isalnum, str.alpha, str.isdigit, str.islower, str.isupper]
+    fn_list = [str.isalnum, str.isalpha, str.isdigit, str.islower, str.isupper]
     
     # printing the result of checks after applying the string based methods
     for fn in fn_list:
