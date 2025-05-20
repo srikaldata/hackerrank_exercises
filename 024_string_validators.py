@@ -10,3 +10,6 @@ if __name__ == '__main__':
     # check if the string has any alphabetical chars
     print(any(str.isalpha(char) for char in s))
     
+    # check if the string has any digit chars
+    print(any(str.isdigit(char) for char in s))
+    
