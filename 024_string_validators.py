@@ -18,3 +18,12 @@ if __name__ == '__main__':
     
     # check if the string has any uppercase chars
     print(any(str.isupper(char) for char in s))
+
+
+# submission 2 - using list of str methods and a for loop
+if __name__ == '__main__':
+    s = input()
+    
+    # list of functions to be applied on the string
+    fn_list = [str.isalnum, str.alpha, str.isdigit, str.islower, str.isupper]
+    
