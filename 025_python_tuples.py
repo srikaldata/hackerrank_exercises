@@ -10,3 +10,5 @@ if __name__ == '__main__':
     # get and split the inputs
     integer_list = map(int, input().split())
     
+    # convert to tuple and print the hash of the tuple
+    print(hash(tuple(integer_list)))
