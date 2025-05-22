@@ -17,3 +17,7 @@ if __name__ == '__main__':
     grades = sorted(set([score for name, score in students]))
     second_lowest = grades[1]
     
+    # grabbing the names of 2 or more people with same second lowest score
+    result = [name for name, score in students if score == second_lowest]
+    result.sort()
+        
