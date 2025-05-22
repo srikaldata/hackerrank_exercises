@@ -6,3 +6,14 @@ if __name__ == '__main__':
     
     # empty list
     students = []
+    
+    # get the inputs and create a list
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+        
+    # sort the unique scores in ascending order to grab the second lowest
+    grades = sorted(set([score for name, score in students]))
+    second_lowest = grades[1]
+    
