@@ -20,4 +20,7 @@ if __name__ == '__main__':
     # grabbing the names of 2 or more people with same second lowest score
     result = [name for name, score in students if score == second_lowest]
     result.sort()
-        
+    
+    # print all the results
+    for name in result:
+        print(name)
