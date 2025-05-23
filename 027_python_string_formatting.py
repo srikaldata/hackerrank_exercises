@@ -16,3 +16,10 @@ def print_formatted(number):
         hexa = hex(i)[2:].upper().rjust(width)
         binary = bin(i)[2:].rjust(width)
         
+        # print the values in the given format
+        print(f"{dec} {octal} {hexa} {binary}")
+    
+
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
