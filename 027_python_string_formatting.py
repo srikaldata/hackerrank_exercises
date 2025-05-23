@@ -12,3 +12,5 @@ def print_formatted(number):
     for i in range(1, number+1):
         
         dec = str(i).rjust(width)
+        octal = oct(i)[2:].rjust(width)
+        
