@@ -8,3 +8,7 @@ def print_formatted(number):
     # find the width for the space between the values
     width = len(bin(number)[2:])
     
+    return width
+    
+print(print_formatted(30000))
+    
